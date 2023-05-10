@@ -100,6 +100,7 @@ jobs:
             -DOpenMP_C_LIB_NAMES="libomp" -DOpenMP_CXX_LIB_NAMES="libomp" \
             -DOpenMP_libomp_LIBRARY="$DEVELOPER_DIR/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libomp.a" \
             -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install \
+            -DNCNN_SIMPLEOCV=ON \
             -DNCNN_BUILD_TOOLS=OFF -DNCNN_BUILD_EXAMPLES=OFF ..
         cmake --build . -j 3
 
